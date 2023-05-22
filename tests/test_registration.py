@@ -39,10 +39,10 @@ def test_registration_with_valid_data():
     browser.element(".modal-title").should(have.text("Thanks for submitting the form"))
     browser.all(".table").all("td").should(
         have.exact_texts(
-            ("Student Name", "User Test"),
-            ("Student Email", "test@ya.ru"),
+            ("Student Name", "Lasha"),
+            ("Student Email", "lasha@mail.ru"),
             ("Gender", "Female"),
-            ("Mobile", "7123456789"),
+            ("Mobile", "79263530000"),
             ("Date of Birth", "15 September,2001"),
             ("Subjects", "Computer Science"),
             ("Hobbies", "Reading"),
