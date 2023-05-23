@@ -10,7 +10,7 @@ def test_registration_with_valid_data():
     browser.element("#lastName").type("Bas")
     browser.element("#userEmail").type("lasha@mail.ru")
     browser.element('[value="Female"] + label').click()
-    browser.element("#userNumber").type("79263530000")
+    browser.element("#userNumber").type("8800100300")
 
     browser.element("#dateOfBirthInput").click()
     browser.element(".react-datepicker__month-select").click()
@@ -39,10 +39,10 @@ def test_registration_with_valid_data():
     browser.element(".modal-title").should(have.text("Thanks for submitting the form"))
     browser.all(".table").all("td").should(
         have.exact_texts(
-            ("Student Name", "Lasha"),
+            ("Student Name", "Lasha Bas"),
             ("Student Email", "lasha@mail.ru"),
             ("Gender", "Female"),
-            ("Mobile", "79263530000"),
+            ("Mobile", "8800100300"),
             ("Date of Birth", "15 September,2001"),
             ("Subjects", "Computer Science"),
             ("Hobbies", "Reading"),
